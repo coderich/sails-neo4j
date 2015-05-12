@@ -1,13 +1,10 @@
 {
-  "name": "sails-neo4j",
+  "name": "cr-sails-neo4j",
   "version": "0.0.1",
   "description": "neo4j adapter for Sails / Waterline",
   "private": true,
   "main": "./lib/adapter.js",
-  "scripts": {
-    "test": "node test/integration/runner -R spec -b"
-  },
-  "repository": {"type":"git","url":"git@github.com:coderich/sails-neo4j.git"},
+  "repository": {"type":"git","url":"git+ssh://git@github.com:coderich/sails-neo4j.git"},
   "keywords": [
     "neo4j",
     "adapter",
@@ -20,21 +17,11 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "q" : "1.0.x",
-    "request": "2.40.x",
-    "chance": "0.5.x"
+    "request": "2.40.x"
   },
   "devDependencies": {
     "waterline-adapter-tests": "~0.10.0",
     "mocha": "*",
     "captains-log": "~0.11.0"
-  },
-  "waterlineAdapter": {
-    "type": "neo4j",
-    "interfaces": [
-      "semantic",
-      "queryable"
-    ],
-    "waterlineVersion": "~0.10.0"
   }
 }
