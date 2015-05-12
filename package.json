@@ -2,6 +2,7 @@
   "name": "sails-neo4j",
   "version": "0.0.1",
   "description": "neo4j adapter for Sails / Waterline",
+  "private": true,
   "main": "./lib/adapter.js",
   "scripts": {
     "test": "node test/integration/runner -R spec -b"
